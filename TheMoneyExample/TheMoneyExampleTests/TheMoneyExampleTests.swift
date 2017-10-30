@@ -12,7 +12,7 @@ import XCTest
 class TheMoneyExampleTests: XCTestCase {
 
     func testMultiplication() {
-        let five = Dollar(5)
+        var five = Dollar(5)
         five.times(2)
         XCTAssertEqual(five.amount, 10)
     }
