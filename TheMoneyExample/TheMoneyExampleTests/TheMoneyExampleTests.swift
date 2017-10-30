@@ -13,7 +13,9 @@ class TheMoneyExampleTests: XCTestCase {
 
     func testMultiplication() {
         var five = Dollar(5)
-        five.times(2)
-        XCTAssertEqual(five.amount, 10)
+        var product = five.times(2)
+        XCTAssertEqual(product.amount, 10)
+        product = five.times(3)
+        XCTAssertEqual(product.amount, 15)
     }
 }
