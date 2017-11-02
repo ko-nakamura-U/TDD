@@ -8,11 +8,15 @@
 
 import Foundation
 
-struct Dollar {
+struct Dollar: Equatable {
+
     var amount: Int
 
     init(_ amount: Int) {
         self.amount = amount
+    }
+    static func ==(lhs: Dollar, rhs: Dollar) -> Bool {
+        return lhs.amount == rhs.amount
     }
 
     mutating func times(_ multiplier: Int) -> Dollar {
