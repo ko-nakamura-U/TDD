@@ -23,3 +23,19 @@ struct Dollar: Equatable {
         return Dollar.init(amount * multiplier)
     }
 }
+
+struct Franc: Equatable {
+    
+    private var amount: Int
+    
+    init(_ amount: Int) {
+        self.amount = amount
+    }
+    static func ==(lhs: Franc, rhs: Franc) -> Bool {
+        return lhs.amount == rhs.amount
+    }
+    
+    mutating func times(_ multiplier: Int) -> Franc {
+        return Franc.init(amount * multiplier)
+    }
+}
