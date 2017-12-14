@@ -10,7 +10,7 @@ import Foundation
 
 class Dollar: Money {
 
-    func times(_ multiplier: Int) -> Dollar {
+    override func times(_ multiplier: Int) -> Dollar {
         return Dollar.init(amount * multiplier)
     }
 }

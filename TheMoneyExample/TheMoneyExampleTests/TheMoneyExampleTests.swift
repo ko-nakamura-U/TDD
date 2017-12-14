@@ -12,9 +12,9 @@ import XCTest
 class TheMoneyExampleTests: XCTestCase {
 
     func testMultiplication() {
-        let five = Dollar(5)
-        XCTAssertEqual(Dollar(10), five.times(2))
-        XCTAssertEqual(Dollar(15), five.times(3))
+        let five = Money.dollar(5)
+        XCTAssertEqual(Money.dollar(10), five.times(2))
+        XCTAssertEqual(Money.dollar(15), five.times(3))
     }
 
     func testEquality() {
@@ -26,8 +26,8 @@ class TheMoneyExampleTests: XCTestCase {
     }
 
     func testFrancMultiplication() {
-        let five = Franc(5)
-        XCTAssertEqual(Franc(10), five.times(2))
-        XCTAssertEqual(Franc(15), five.times(3))
+        let five = Money.franc(5)
+        XCTAssertEqual(Money.franc(10), five.times(2))
+        XCTAssertEqual(Money.franc(15), five.times(3))
     }
 }

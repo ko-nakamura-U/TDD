@@ -18,4 +18,15 @@ class Money: Equatable {
     static func ==(lhs: Money, rhs: Money) -> Bool {
         return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
     }
+
+    func times(_ multiplier: Int) -> Money {
+        return Money.init(amount * multiplier)
+    }
+
+    static func dollar(_ amount: Int) -> Money {
+        return Dollar(amount)
+    }
+    static func franc(_ amount: Int) -> Money {
+        return Franc(amount)
+    }
 }
