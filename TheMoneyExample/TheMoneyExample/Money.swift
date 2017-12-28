@@ -9,6 +9,7 @@
 import Foundation
 
 class Money: Equatable {
+
     var amount: Int
     var currencyName: String
 
@@ -18,11 +19,12 @@ class Money: Equatable {
     }
 
     static func ==(lhs: Money, rhs: Money) -> Bool {
-        return lhs.amount == rhs.amount && type(of: lhs) == type(of: rhs)
+        return lhs.amount == rhs.amount
+            && lhs.currencyName == rhs.currencyName
     }
 
     func times(_ multiplier: Int) -> Money {
-        return Money.init(amount * multiplier, currencyName)
+        return Money(amount * multiplier, currencyName)
     }
 
     func currency() -> String {
