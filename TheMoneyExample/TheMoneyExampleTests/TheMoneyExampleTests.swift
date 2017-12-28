@@ -20,23 +20,11 @@ class TheMoneyExampleTests: XCTestCase {
     func testEquality() {
         XCTAssertTrue(Money.dollar(5) == Money.dollar(5))
         XCTAssertFalse(Money.dollar(5) == Money.dollar(6))
-        XCTAssertTrue(Money.franc(5) == Money.franc(5))
-        XCTAssertFalse(Money.franc(5) == Money.franc(6))
         XCTAssertFalse(Money.franc(5) == Money.dollar(5))
-    }
-
-    func testFrancMultiplication() {
-        let five = Money.franc(5)
-        XCTAssertEqual(Money.franc(10), five.times(2))
-        XCTAssertEqual(Money.franc(15), five.times(3))
     }
 
     func testCurrency() {
         XCTAssertEqual("USD", Money.dollar(1).currency())
         XCTAssertEqual("CHF", Money.franc(1).currency())
-    }
-
-    func testDifferentClassEquality() {
-        XCTAssertEqual(Money(10, "CHF"), Franc(10, "CHF"))
     }
 }
