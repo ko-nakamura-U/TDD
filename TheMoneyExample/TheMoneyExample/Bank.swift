@@ -10,6 +10,6 @@ import Foundation
 
 class Bank {
     func reduced(_ source: Expression, _ to: String) -> Money {
-        return Money.dollar(10)
+        return source.reduce(to)
     }
 }
