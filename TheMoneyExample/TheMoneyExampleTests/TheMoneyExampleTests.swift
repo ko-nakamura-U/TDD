@@ -27,4 +27,12 @@ class TheMoneyExampleTests: XCTestCase {
         XCTAssertEqual("USD", Money.dollar(1).currency())
         XCTAssertEqual("CHF", Money.franc(1).currency())
     }
+
+    func testSimpleAddition() {
+        let five = Money.dollar(5)
+        let sum: Expression = five.plus(five)
+        let bank = Bank()
+        let reduced = bank.reduced(sum, "USD")
+        XCTAssertEqual(Money.dollar(10), reduced)
+    }
 }
