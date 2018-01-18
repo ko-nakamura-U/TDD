@@ -21,6 +21,6 @@ class Bank {
     }
 
     func rate(_ from: String, _ to: String) -> Int {
-        return rates[Pair(from, to)]!  // TODO: error case
+        return from == to ? 1 : rates[Pair(from, to)]!  // TODO: error case
     }
 }

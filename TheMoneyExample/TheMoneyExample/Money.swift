@@ -23,11 +23,11 @@ class Money: Equatable, Expression {
             && lhs.currencyName == rhs.currencyName
     }
 
-    func times(_ multiplier: Int) -> Money {
+    func times(_ multiplier: Int) -> Expression {
         return Money(amount * multiplier, currencyName)
     }
 
-    func plus(_ addend: Money) -> Expression {
+    func plus(_ addend: Expression) -> Expression {
         return Sum(self, addend)
     }
 
