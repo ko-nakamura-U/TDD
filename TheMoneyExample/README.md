@@ -1,11 +1,11 @@
 # TODOリスト
 
 - $5 + 10 CHF = $10（レートが2:1の場合）
-- $5 + $5 = 10$
+- ~~$5 + $5 = 10$~~
 - $5 + $5がMoneyを返す
 - ~~Bank.reduce(Money)~~
-- Moneyを変換して換算を行う
-- Reduce(Bank, String)
+- ~~Moneyを変換して換算を行う~~
+- ~~Reduce(Bank, String)~~
 - ~~$5 * 2 = $10~~
 - ~~amountをprivateにする~~
 - ~~Dollarの副作用どうする？~~
