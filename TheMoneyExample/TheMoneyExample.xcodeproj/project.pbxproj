@@ -14,6 +14,7 @@
 		732A64F21FA1CB6D0046E1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732A64F01FA1CB6D0046E1C6 /* LaunchScreen.storyboard */; };
 		732A64FD1FA1CB6D0046E1C6 /* TheMoneyExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A64FC1FA1CB6D0046E1C6 /* TheMoneyExampleTests.swift */; };
 		732A65081FA1CB6D0046E1C6 /* TheMoneyExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A65071FA1CB6D0046E1C6 /* TheMoneyExampleUITests.swift */; };
+		732EAE9E20108DDD00691375 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732EAE9D20108DDD00691375 /* Pair.swift */; };
 		73CC5F731FD93996001ED5E7 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC5F721FD93996001ED5E7 /* Money.swift */; };
 		73F217C61FF4E5C20025744B /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F217C51FF4E5C20025744B /* Bank.swift */; };
 		73F217C81FF4E6650025744B /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F217C71FF4E6650025744B /* Expression.swift */; };
@@ -51,6 +52,7 @@
 		732A65031FA1CB6D0046E1C6 /* TheMoneyExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMoneyExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732A65071FA1CB6D0046E1C6 /* TheMoneyExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMoneyExampleUITests.swift; sourceTree = "<group>"; };
 		732A65091FA1CB6D0046E1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732EAE9D20108DDD00691375 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		73CC5F721FD93996001ED5E7 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		73F217C51FF4E5C20025744B /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		73F217C71FF4E6650025744B /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				73F217C71FF4E6650025744B /* Expression.swift */,
 				73F217C51FF4E5C20025744B /* Bank.swift */,
 				73F217C91FF4EC9E0025744B /* Sum.swift */,
+				732EAE9D20108DDD00691375 /* Pair.swift */,
 				732A64EB1FA1CB6D0046E1C6 /* Main.storyboard */,
 				732A64EE1FA1CB6D0046E1C6 /* Assets.xcassets */,
 				732A64F01FA1CB6D0046E1C6 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				732A64EA1FA1CB6D0046E1C6 /* ViewController.swift in Sources */,
 				732A64E81FA1CB6D0046E1C6 /* AppDelegate.swift in Sources */,
 				73F217C81FF4E6650025744B /* Expression.swift in Sources */,
+				732EAE9E20108DDD00691375 /* Pair.swift in Sources */,
 				73F217CA1FF4EC9E0025744B /* Sum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

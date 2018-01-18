@@ -56,4 +56,11 @@ class TheMoneyExampleTests: XCTestCase {
         let result = bank.reduced(Money.dollar(1), "USD")
         XCTAssertEqual(Money.dollar(1), result)
     }
+
+    func testReduceMoneyDifferentCurrency() {
+        let bank = Bank()
+        bank.addRate("CHF", "USD", 2)
+        let result = bank.reduced(Money.franc(2), "USD")
+        XCTAssertEqual(Money.dollar(1), result)
+    }
 }

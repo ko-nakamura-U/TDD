@@ -9,7 +9,18 @@
 import Foundation
 
 class Bank {
+
+    private var rates: [Pair : Int] = [:]
+
     func reduced(_ source: Expression, _ to: String) -> Money {
-        return source.reduce(to)
+        return source.reduce(self, to)
+    }
+
+    func addRate(_ from: String, _ to: String, _ rate: Int) {
+        rates[Pair(from, to)] = rate
+    }
+
+    func rate(_ from: String, _ to: String) -> Int {
+        return rates[Pair(from, to)]!  // TODO: error case
     }
 }
