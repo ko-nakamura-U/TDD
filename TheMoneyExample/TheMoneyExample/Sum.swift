@@ -17,8 +17,12 @@ class Sum: Expression {
         self.addend = addend
     }
 
+    func times(_ multiplier: Int) -> Expression {
+        return Sum(augend.times(multiplier), addend.times(multiplier))
+    }
+
     func plus(_ addend: Expression) -> Expression {
-        return addend  // TODO: implement
+        return Sum(self, addend)
     }
 
     func reduce(_ bank: Bank, _ to: String) -> Money {
